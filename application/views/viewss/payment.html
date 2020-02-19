@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="container">
+<ul class="nav nav-pills nav-stacked col-md-2">
+  <li class="active"><a href="#tab_a" data-toggle="pill">Pill A</a></li>
+  <li><a href="#tab_b" data-toggle="pill">Pill B</a></li>
+</ul>
+<div class="tab-content col-md-10">
+        <div class="tab-pane active" id="tab_a">
+             <h4>Card payment </h4>
+    
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox" />
+                            Remember
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                      <!-- Name -->
+          <div class="control-group">
+            <label class="control-label"  for="username">CARD HOLDER'S NAME</label>
+            <div class="controls">
+                 <input type="text" class="form-control" id="holdername" placeholder="required">
+            </div>
+          </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CVV2 CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CVV2" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Invoice Total</a>
+                </li>
+            </ul>
+            <br/>
+            <a href="#" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="tab-pane" id="tab_b">
+             <h4>Bank-pay</h4>
+                  <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <font size="+2">Bank-pay</font>
+                        </div>
+                        <div class="panel-body">
+       <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <tbody><tr>
+                                                <th width="14%">Amount</th>
+                                                <td width="20%"><input type="text" name="fin_amount" class="form-control">
+                                                </td>
+                                                <th width="14%">Transactionm no.</th>
+                                                <td width="20%">
+                                                	<input type="number" name="insamount" class="form-control">
+                                                </td>
+                                                <th width="14%">date</th>
+                                                <td width="15%">
+                                                	<input type="date" name="insdate" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Late Fine</th>
+                                                <td>
+                                                	<input type="text" name="latefine" placeholder="5% per day" class="form-control">
+                                                </td>
+                                           </tr>
+                                           <table align="center">
+                                           <tr><td>
+                                           <button type="submit" class="btn btn-success" value="submit">Submit</button></td>
+                                       </tr>
+                                       </table>
+                                        </tbody>
+                                        </table>
+                                        </div>
+                         </div>
+                    </div>
+        </div>
+  </div>      
+</div><!-- tab content -->
+</div><!-- end of container -->
+</body>
+</html>

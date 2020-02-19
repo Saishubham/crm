@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+.hidden{
+	display:none;
+}
+.navbg{
+	background-color:#e8ffcab8;
+	
+	}
+ .bgh{
+	background-color:#afe70c;
+	
+	}
+.bgnavcolor {
+		background-color:#1CE70C !important;		
+	}
+	
+	
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 1px 0 rgba(255,255,255,.25);
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+  	padding: 15px 15px;
+    font-size: 28px !important;
+    line-height: 20px;
+}

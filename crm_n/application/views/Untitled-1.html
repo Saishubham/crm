@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function showDiv(){
+   document.getElementById('hidden_div').style.display = "block";
+}
+</script>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<select id="test" name="form_select">
+   <option value="0">No</option> 
+   <option value ="1" onClick"showDiv()"> Yes</option>
+</select>
+<div id="hidden_div" style="display: none;">Hello hidden content</div>
+<body>
+</body>
+</html>
